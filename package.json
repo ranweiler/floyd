@@ -1,0 +1,28 @@
+{
+  "name": "georg",
+  "description": "georg",
+  "version": "0.0.1",
+  "private": true,
+  "homepage": "",
+  "repository": "",
+  "author": "",
+  "main": "./app.js",
+  "dependencies": {
+    "coffee-script": "*",
+    "connect": "*"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": ""
+    }
+  ],
+  "scripts": {
+    "test": "",
+    "build": "./node_modules/.bin/coffee -cb public/js/main.coffee",
+    "run": "./node_modules/.bin/coffee app.coffee"
+  }
+}
