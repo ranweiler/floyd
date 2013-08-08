@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>
+    <script data-main="js/app/init" src="js/vendor/require.js"></script>
+    <style>
+      html { background: silver; }
+      body, div, canvas { margin: 0 auto; }
+      canvas { background: white; }
+      div { border: 1px dotted gray; padding: 5px; margin: 5px;}
+      #display {
+
+      }
+      #display div {
+        width: 45%;
+        flow: inline;
+        float: left;
+        overflow: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <button id="process">Process</button>
+
+      <select id="method">
+        <option id="quantize">Quantize</option>
+        <option id="dither">Dither</option>
+        <option id="animatedDither">AnimatedDither</option>
+      </select>
+
+      <div>
+        <h4>RGB bits</h4>
+        <input id="bitSlider" type="range"
+               value="1" min="1" max="8" step="1"/>
+        <span id="bits">3</span>
+      </div>
+
+      <div>
+        <h4>Delay</h4>
+        <input id="delaySlider" type="range"
+               value="0" min="0" max="10" step="0.5"/>
+        <span id="delay">0</span>
+      </div>
+    </div>
+
+    <div id="display">
+      <div>
+        <h3>Input</h3>
+        <canvas id="input" width="0" height="0"></canvas>
+      </div>
+
+      <div>
+        <h3>Output</h3>
+        <canvas id="output" width="0" height="0"></canvas>
+      </div>
+    </div>
+
+  </body>
+</html>
