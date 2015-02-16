@@ -9,7 +9,7 @@
   "main": "./app.js",
   "dependencies": {
     "coffee-script": "*",
-    "connect": "*"
+    "connect": "2"
   },
   "engines": {
     "node": ">= 0.10.0"
