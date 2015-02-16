@@ -1,4 +1,4 @@
-georg
+Floyd
 =====
 
-georg
+A dusty, toy, in-browser implementation of Floyd-Steinberg dithering.
